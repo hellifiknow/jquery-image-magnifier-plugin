@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>jQuery Magnifier Plugin Demo</title>
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="jquery.imageMagnifier.js" type="text/javascript"></script>
+	<script type="text/javascript" language="javascript">
+		$(function () {
+			$("#img_01").imageMagnifier();
+			$("#img_02").imageMagnifier({ magnifierSize: 200 });
+			$("#img_03").imageMagnifier({ imageSrc: "og.png" });
+			$("#img_04").imageMagnifier({ borderSize: 8, borderColor: "#06f" });
+		});	
+	</script>
+
+	<style type="text/css">
+		body { margin: 0px; font-family: "Trebuchet MS", Arial, Sans-Serif; font-size: 14px; }
+		a { color: #0066CC; text-decoration: none; }
+		a:hover { color: #2af363; text-decoration: underline; }
+	</style>
+</head>
+<body style="margin-left: 25px;">
+
+	<h1>
+		<a href="https://www.jeffconaway.com/">jeffconaway.me</a>
+	</h1>
+	<hr />
+	<table>
+		<tr>
+			<td>
+				<p>&nbsp;</p>
+				<h3>Example 1 - Default magnifier</h3>
+				<p>
+					<img id="img_01" src="high-tatras.jpg" width="384" height="240" />
+				</p>
+				<pre>$("#img_01").imageMagnifier();</pre>
+				
+				<p>&nbsp;</p>
+				<h3>Example 2 - Custom magnifier size</h3>
+				<p>
+					<img id="img_02" src="high-tatras.jpg" width="384" height="240" />
+				</p>
+				<pre>$("#img_02").imageMagnifier({ magnifierSize: 200 });</pre>
+				
+			</td>
+			<td>
+				<p>&nbsp;</p>
+				<h3>Example 3 - Custom image source</h3>
+				<p>
+					<img id="img_03" src="high-tatras.jpg" width="384" height="240" />
+				</p>
+				<pre>$("#img_03").imageMagnifier({ imageSrc: "og.png" });</pre>
+				
+				<p>&nbsp;</p>
+				<h3>Example 4 - Other magnifier properties</h3>
+				<p>
+					<img id="img_04" src="high-tatras.jpg" width="384" height="240" />
+				</p>
+				<pre>$("#img_04").imageMagnifier({ borderSize: 8, borderColor: "#06f" });</pre>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
